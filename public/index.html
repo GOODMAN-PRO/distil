@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distil — Premium Study Packs for IGCSE & A-Level</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fafaf9;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #1f2937 0%, #4b5563 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #e7e5e4;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta-button {
+      background: #1f2937;
+      color: white;
+      transition: background 0.2s ease;
+    }
+
+    .cta-button:hover {
+      background: #111827;
+    }
+
+    .badge {
+      background: #f3f4f6;
+      color: #374151;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="sticky top-0 bg-white border-b border-gray-200 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="text-2xl font-bold gradient-text">Distil</div>
+      <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+        <a href="#products" class="hover:text-gray-900">Products</a>
+        <a href="#why" class="hover:text-gray-900">Why Distil</a>
+        <a href="#contact" class="hover:text-gray-900">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-6xl mx-auto px-6 py-20">
+    <div class="max-w-3xl">
+      <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
+        Study smarter. Pass harder.
+      </h1>
+      <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+        AI-curated revision packs built by exam experts and refined by machine learning. Everything you need to ace your IGCSE and A-Level exams — organized, practice-tested, and proven.
+      </p>
+      <div class="flex gap-4">
+        <a href="#products" class="px-8 py-3 cta-button rounded-lg font-medium text-white">
+          Browse Packs
+        </a>
+        <a href="#why" class="px-8 py-3 border border-gray-300 rounded-lg font-medium text-gray-900 hover:bg-gray-50">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Section -->
+  <section id="why" class="bg-white py-20 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-12 text-gray-900">Why Distil</h2>
+      <div class="grid md:grid-cols-3 gap-12">
+        <div>
+          <div class="text-sm font-bold text-gray-500 uppercase mb-4">Curated</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">AI-Powered Selection</h3>
+          <p class="text-gray-600 leading-relaxed">Every question is vetted for relevance, difficulty distribution, and learning outcome alignment. No filler.</p>
+        </div>
+        <div>
+          <div class="text-sm font-bold text-gray-500 uppercase mb-4">Complete</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Topic Coverage</h3>
+          <p class="text-gray-600 leading-relaxed">All exam board specs covered — Physics, Biology, Chemistry. Papers 1, 2, and 3. Nothing left behind.</p>
+        </div>
+        <div>
+          <div class="text-sm font-bold text-gray-500 uppercase mb-4">Instant</div>
+          <h3 class="text-xl font-bold mb-3 text-gray-900">Download & Study</h3>
+          <p class="text-gray-600 leading-relaxed">No subscriptions. Buy once, own forever. Offline access. Study on your schedule.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold mb-12 text-gray-900">Study Packs</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Physics -->
+      <div class="product-card bg-white rounded-xl p-8">
+        <div class="mb-6">
+          <span class="badge">Physics</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-3 text-gray-900">Physics MCQ Master</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          500+ curated multiple-choice questions covering electricity, mechanics, waves, and thermodynamics. Full mark schemes and concept guides.
+        </p>
+        <ul class="text-sm text-gray-600 space-y-2 mb-8">
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>500+ exam-style questions</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>Detailed mark schemes</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>Common pitfalls guide</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>PDF + printable</span>
+          </li>
+        </ul>
+        <div class="flex items-end justify-between">
+          <div>
+            <div class="text-sm text-gray-600">Starting at</div>
+            <div class="text-3xl font-bold text-gray-900">£9.99</div>
+          </div>
+          <a href="https://gumroad.com" target="_blank" class="px-6 py-3 cta-button rounded-lg font-medium text-white text-sm">
+            Buy Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Biology -->
+      <div class="product-card bg-white rounded-xl p-8">
+        <div class="mb-6">
+          <span class="badge">Biology</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-3 text-gray-900">Biology MCQ Master</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          450+ questions on cell biology, genetics, ecology, and human physiology. Visual diagrams and labeled explanations for every answer.
+        </p>
+        <ul class="text-sm text-gray-600 space-y-2 mb-8">
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>450+ exam questions</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>Labeled diagrams</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>Biological concepts toolkit</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>PDF + flashcard set</span>
+          </li>
+        </ul>
+        <div class="flex items-end justify-between">
+          <div>
+            <div class="text-sm text-gray-600">Starting at</div>
+            <div class="text-3xl font-bold text-gray-900">£9.99</div>
+          </div>
+          <a href="https://gumroad.com" target="_blank" class="px-6 py-3 cta-button rounded-lg font-medium text-white text-sm">
+            Buy Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Chemistry -->
+      <div class="product-card bg-white rounded-xl p-8">
+        <div class="mb-6">
+          <span class="badge">Chemistry</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-3 text-gray-900">Chemistry MCQ Master</h3>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          480+ questions on bonding, stoichiometry, equilibrium, and organic synthesis. Reaction flowcharts and periodic table reference cards included.
+        </p>
+        <ul class="text-sm text-gray-600 space-y-2 mb-8">
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>480+ exam questions</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>Reaction flowcharts</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>Molar mass tables</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-gray-400 mt-1">✓</span>
+            <span>PDF + quick-ref cards</span>
+          </li>
+        </ul>
+        <div class="flex items-end justify-between">
+          <div>
+            <div class="text-sm text-gray-600">Starting at</div>
+            <div class="text-3xl font-bold text-gray-900">£9.99</div>
+          </div>
+          <a href="https://gumroad.com" target="_blank" class="px-6 py-3 cta-button rounded-lg font-medium text-white text-sm">
+            Buy Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial / Social Proof -->
+  <section class="bg-white py-20 border-t border-gray-200 mt-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold mb-12 text-gray-900">Trusted by students worldwide</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-3xl font-bold gradient-text mb-2">8,400+</div>
+          <div class="text-sm text-gray-600">Students passing</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold gradient-text mb-2">A* - A</div>
+          <div class="text-sm text-gray-600">Average grade</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold gradient-text mb-2">4.8/5</div>
+          <div class="text-sm text-gray-600">Satisfaction score</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Footer -->
+  <section id="contact" class="bg-gray-900 text-white py-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Ready to ace your exams?</h2>
+      <p class="text-gray-300 mb-8">Get instant access to our complete study packs. No subscriptions, no fluff.</p>
+      <a href="#products" class="inline-block px-8 py-3 bg-white text-gray-900 rounded-lg font-medium hover:bg-gray-100">
+        Shop Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-gray-400 py-8 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between text-sm">
+      <div>Distil © 2026 — Study smarter.</div>
+      <div class="flex gap-6">
+        <a href="mailto:hello@distil.ai" class="hover:text-white">Contact</a>
+        <a href="#" class="hover:text-white">Privacy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
